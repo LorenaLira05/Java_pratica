@@ -5,7 +5,7 @@ public class Lampada {
 	
 	//metodos
 	public void ligar() {
-		ligada = false;
+		ligada = true;
 	}
 	
 	public void desligar() {
