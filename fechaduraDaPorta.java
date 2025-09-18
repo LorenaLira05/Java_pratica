@@ -1,49 +1,59 @@
 package ads.coding.lista.ex02;
 
 public class fechaduraDaPorta {
-  //Atributos da classe
+    // Atributos da classe
     boolean aberta;
     boolean trancada;
-  
-  //Construtor
+
+    // Construtor
     public fechaduraDaPorta() {
-        this.aberta = true;
-        this.trancada = false;
+        aberta = true;
+        trancada = false;
         // A porta começa aberta e destrancada
     }
-    //Metodos
-      public void abrirPorta() {
-        //abre a porta
-        if(this.aberta == true) {
+
+    // Métodos
+    public void abrirPorta() {
+        // Abre a porta
+        if (aberta) {
             System.out.println("A porta já está aberta!");
+        } else if (trancada) {
+            System.out.println("A porta está trancada! Não é possível abrir.");
         } else {
             aberta = true;
-          System.out.println("Porta aberta!");
+            System.out.println("Porta aberta!");
         }
     }
-      public void fecharPorta() {
-        //fecha a porta
-            if(this.aberta == false) {
+
+    public void fecharPorta() {
+        // Fecha a porta
+        if (!aberta) {
             System.out.println("A porta já está fechada!");
-            } else {
+        } else {
             aberta = false;
             System.out.println("Porta fechada!");
         }
-
-      }
-
-     public void trancarPorta() {
-        //tranca a porta (se ela estiver fechada)
-          if(this.aberta == true) {
-            System.out.println("Voce nao pode trancar a porta se ela estiver aberta!");
-          } else if (trancada == true){
-            System.out.println("A porta ja esta trancada!");
-          } else {
-            trancada == true;
-              System.out.println("Trancando...Porta trancada!");
-            
-      
     }
 
-     }
+    public void trancarPorta() {
+        // Tranca a porta (se ela estiver fechada)
+        if (aberta) {
+            System.out.println("Você não pode trancar a porta se ela estiver aberta!");
+        } else if (trancada) {
+            System.out.println("A porta já está trancada!");
+        } else {
+            trancada = true;
+            System.out.println("Trancando... Porta trancada!");
+        }
+    }
+
+    public void destrancarPorta() {
+        // Destranca a porta (se ela estiver trancada)
+        if (!trancada) {
+            System.out.println("A porta já está destrancada!");
+        } else {
+            trancada = false;
+            System.out.println("Porta destrancada!");
+        }
+    }
 }
