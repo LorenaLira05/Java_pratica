@@ -28,6 +28,7 @@ public class LampadaInteligente {
           System.out.println("Lâmpada ligada");
         }
     }
+    
     public void desligar() {
         //Desliga a lâmpada
        if(!this.ligada) {
@@ -39,6 +40,7 @@ public class LampadaInteligente {
            System.out.println("Lâmpada desligada");
        }
     }
+    
     public void aumentarIntensidade() {
         if (this.ligada &&  this.intensidade < 100) {
             this.intensidade +=10;
@@ -52,6 +54,7 @@ public class LampadaInteligente {
             System.out.println("Intensidade diminuida para: " + intensidade);
         }
     }
+    
     public void trocarTipoDaLuz(String novoTipo) {
         if (this.ligada &&  this.tipoDaLuz.equals("branca"))  {
             this.tipoDaLuz = novoTipo;
@@ -75,6 +78,7 @@ public class LampadaInteligente {
         this.modo = "Estudo";
         System.out.println("Lâmpada configurada no modo Estudo.");
     }
+    
     // Mostra status atual
     public void status() {
         System.out.println("Ligada: " + ligada +
