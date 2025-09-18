@@ -53,7 +53,7 @@ public class fechaduraDaPorta {
             System.out.println("A porta já está destrancada!");
         } else {
             trancada = false;
-            System.out.println("Porta destrancada!");
+            System.out.println("Destrancando...Porta destrancada!");
         }
     }
 
@@ -62,5 +62,7 @@ public class fechaduraDaPorta {
         porta.fecharPorta();   // Porta fechada!
         porta.trancarPorta();  // Trancando... Porta trancada!
         porta.abrirPorta();    // A porta está trancada! Não é possível abrir.
+        porta.destrancarPorta(); // Destrancando...Porta destrancada!
+        porta.abrirPorta(); // Porta aberta!
     }
 }
