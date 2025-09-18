@@ -56,4 +56,11 @@ public class fechaduraDaPorta {
             System.out.println("Porta destrancada!");
         }
     }
+
+    public static void main(String[] args) {
+        fechaduraDaPorta porta = new fechaduraDaPorta();
+        porta.fecharPorta();   // Porta fechada!
+        porta.trancarPorta();  // Trancando... Porta trancada!
+        porta.abrirPorta();    // A porta está trancada! Não é possível abrir.
+    }
 }
