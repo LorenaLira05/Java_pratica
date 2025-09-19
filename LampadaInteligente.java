@@ -92,24 +92,27 @@ public class LampadaInteligente {
   public static void main(String[] args) {
         LampadaInteligente lampada1 = new LampadaInteligente();
         LampadaInteligente lampada2 = new LampadaInteligente();
+      
+		       System.out.println("=== Lâmpada 1 ===");
+		     //Lâmpada 1 em modo relax
+		        lampada1.setModoRelax();
+		        lampada1.status();
 
-     //Lâmpada 1 em modo relax
-        lampada1.setModoRelax();
-        lampada1.status();
+		     //Ajusta a intensidade da lâmpada 1
+		        lampada1.diminuirIntensidade();
 
-     //Ajusta a intensidade da lâmpada 1
-        lampada1.diminuirIntensidade();
+		     // Lâmpada 2 em modo Estudo
+		        lampada2.setModoEstudo();
+		        lampada2.status();
+		        
+		        System.out.println("\n=== Lâmpada 2 ===");
+		      // Troca tipo de luz da lâmpada 2
+		        lampada2.trocarTipoDaLuz("Azulada");
+		        lampada2.status();
 
-     // Lâmpada 2 em modo Estudo
-        lampada2.setModoEstudo();
-        lampada2.status();
-
-      // Troca tipo de luz da lâmpada 2
-        lampada2.trocarTipoDaLuz("Azulada");
-        lampada2.status();
-
-      //Desliga a lâmpada 1 e 2
-        lampada1.desligar();
-        lampada2.desligar();
-        }
-    }                       
+		        System.out.println("\n=== Desligando as  duas lâmpadas ===");
+		      //Desliga a lâmpada 1 e 2
+		        lampada1.desligar();
+		        lampada2.desligar();
+		        }
+        }                       
