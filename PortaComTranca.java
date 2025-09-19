@@ -1,12 +1,12 @@
 package ads.coding.lista.ex02;
 
-public class fechaduraDaPorta {
+public class PortaComTranca {
     // Atributos da classe
     boolean aberta;
     boolean trancada;
 
     // Construtor
-    public fechaduraDaPorta() {
+    public PortaComTranca() {
         aberta = true;
         trancada = false;
         // A porta começa aberta e destrancada
@@ -58,7 +58,7 @@ public class fechaduraDaPorta {
     }
 
     public static void main(String[] args) {
-        fechaduraDaPorta porta = new fechaduraDaPorta();
+        PortaComTranca porta = new PortaComTranca();
         porta.fecharPorta();   // Porta fechada!
         porta.trancarPorta();  // Trancando... Porta trancada!
         porta.abrirPorta();    // A porta está trancada! Não é possível abrir.
