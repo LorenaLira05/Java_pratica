@@ -56,13 +56,21 @@ public class PortaComTranca {
             System.out.println("Destrancando...Porta destrancada!");
         }
     }
-
-    public static void main(String[] args) {
-        PortaComTranca porta = new PortaComTranca();
-        porta.fecharPorta();   // Porta fechada!
-        porta.trancarPorta();  // Trancando... Porta trancada!
-        porta.abrirPorta();    // A porta está trancada! Não é possível abrir.
-        porta.destrancarPorta(); // Destrancando...Porta destrancada!
-        porta.abrirPorta(); // Porta aberta!
+    
+    public void status() {
+    	System.out.println("Porta " + (aberta ? "aberta" : "fechada") +
+            " e " + (trancada ? "trancada" : "destrancada"));
     }
+
+}
+public class App {
+	 public static void main(String[] args) {
+	        PortaComTranca porta = new PortaComTranca();
+	        porta.status(); //mostra o estado atual da porta       
+	        porta.fecharPorta();   // Porta fechada!
+	        porta.trancarPorta();  // Trancando... Porta trancada!
+	        porta.abrirPorta();    // A porta está trancada! Não é possível abrir.
+	        porta.destrancarPorta(); // Destrancando...Porta destrancada!
+	        porta.abrirPorta(); // Porta aberta!
+	    }
 }
