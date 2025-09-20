@@ -22,7 +22,7 @@ public class TelevisaoSimples {
 	      }
 		
 	}
-	//método para ligar
+	//método para desligar
 	public void desligar() {
 		if(!ligado) {
 	        System.out.println("A TV já está desligada");
