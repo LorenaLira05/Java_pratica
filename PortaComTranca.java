@@ -1,7 +1,6 @@
 package ads.coding.lista.ex02;
 
 public class PortaComTranca {
-    // Atributos da classe
     boolean aberta;
     boolean trancada;
 
@@ -10,21 +9,22 @@ public class PortaComTranca {
         aberta = true;
         trancada = false;
         // A porta começa aberta e destrancada
+        
     }
-
-    // Métodos
+    // Método para abrir a porta
     public void abrirPorta() {
         // Abre a porta
         if (aberta) {
             System.out.println("A porta já está aberta!");
         } else if (trancada) {
-            System.out.println("A porta está trancada! Não é possível abrir.");
+            System.out.println("A porta está trancada! Não é possível abrir."); 
         } else {
             aberta = true;
             System.out.println("Porta aberta!");
         }
+        
     }
-
+    // Método para fechar a porta
     public void fecharPorta() {
         // Fecha a porta
         if (!aberta) {
@@ -33,20 +33,22 @@ public class PortaComTranca {
             aberta = false;
             System.out.println("Porta fechada!");
         }
+        
     }
-
+    // Método para trancar a porta
     public void trancarPorta() {
         // Tranca a porta (se ela estiver fechada)
         if (aberta) {
-            System.out.println("Você não pode trancar a porta se ela estiver aberta!");
+            System.out.println("Você não pode trancar a porta se ela estiver aberta!"); 
         } else if (trancada) {
             System.out.println("A porta já está trancada!");
         } else {
             trancada = true;
             System.out.println("Trancando... Porta trancada!");
         }
+        
     }
-
+    // Método para destrancar a porta
     public void destrancarPorta() {
         // Destranca a porta (se ela estiver trancada)
         if (!trancada) {
@@ -62,15 +64,4 @@ public class PortaComTranca {
             " e " + (trancada ? "trancada" : "destrancada"));
     }
 
-}
-public class App {
-	 public static void main(String[] args) {
-	        PortaComTranca porta = new PortaComTranca();
-	        porta.status(); //mostra o estado atual da porta       
-	        porta.fecharPorta();   // Porta fechada!
-	        porta.trancarPorta();  // Trancando... Porta trancada!
-	        porta.abrirPorta();    // A porta está trancada! Não é possível abrir.
-	        porta.destrancarPorta(); // Destrancando...Porta destrancada!
-	        porta.abrirPorta(); // Porta aberta!
-	    }
 }
