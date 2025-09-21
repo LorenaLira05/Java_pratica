@@ -63,18 +63,4 @@ public class MaquinaDeCafe {
         System.out.println("Açúcar: " + acucar + " colheres");
     }
 
-    // Exemplo de uso
-    public static void main(String[] args) {
-        MaquinaDeCafe maquina = new MaquinaDeCafe(200, 50, 60, 5);
-
-        maquina.mostrarRecursos();
-
-        // Preparo válido
-        System.out.println(maquina.preparar(Bebida.CAFE_COM_LEITE));
-        maquina.mostrarRecursos();
-
-        // Preparo inválido (recursos insuficientes)
-        System.out.println(maquina.preparar(Bebida.CAFE_COM_LEITE));
-        maquina.mostrarRecursos();
-    }
 }
