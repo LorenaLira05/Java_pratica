@@ -1,8 +1,12 @@
-# Prática Java
+# ☕ Exercícios de Java - Faculdade
 
-Este repositório é usado para prática de Java, armazenando classes, métodos e programas simples.
-O objetivo principal é treinar a criação de classes, atributos, métodos e a lógica básica do Java.
+Repositório com os exercícios feitos nas aulas de **Java** da faculdade 
+---
 
-# Observações
+## 📘 Sobre
 
-Este repositório é apenas para estudo e não contém projetos prontos para produção.
+Aqui estão os códigos que pratico durante as aulas, para reforçar os conteúdos vistos em sala e aprimorar minha lógica de programação em Java.
+
+---
+
+📍 *“A prática leva à fluência — especialmente em programação.”*
